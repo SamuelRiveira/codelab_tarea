@@ -19,7 +19,7 @@ fun App() {
     MaterialTheme {
         var showInicio by remember { mutableStateOf(true) }
         if (showInicio) {
-            Inicio(changeShowInicio = {showInicio = false})
+            Inicio{showInicio = false}
         } else {
             SegundaPantalla()
         }
