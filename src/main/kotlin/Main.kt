@@ -86,7 +86,8 @@ fun Tarjeta(texto: String = ""){
                         isExpanded = !isExpanded
                     }
                 },
-                colors = ButtonDefaults.buttonColors(backgroundColor = Color(0xff9b88f6))){
+                colors = ButtonDefaults.buttonColors(backgroundColor = Color(0xff9b88f6))
+            ){
                 Text(
                     text = (if (isExpanded) "Show less" else "Show more"),
                     color = Color.White
