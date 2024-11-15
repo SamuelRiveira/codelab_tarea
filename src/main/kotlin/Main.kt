@@ -35,9 +35,13 @@ fun Inicio(changeShowInicio: () -> Unit){
     ) {
         Text("Esta es la pantalla de inicio")
         Button(
-            onClick = changeShowInicio
+            onClick = changeShowInicio,
+            colors = ButtonDefaults.buttonColors(backgroundColor = Color(0xff9b88f6))
         ){
-            Text(text = "Continuar")
+            Text(
+                text = "Continuar",
+                color = Color.White
+            )
         }
     }
 
