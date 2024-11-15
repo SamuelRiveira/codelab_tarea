@@ -51,8 +51,10 @@ fun SegundaPantalla(){
         "Me gusta programar",
         "Adoro la Tortilla"
     )
-    textos.forEach{ texto ->
-        Tarjeta(texto)
+    Column {
+        textos.forEach{ texto ->
+            Tarjeta(texto)
+        }
     }
 }
 
