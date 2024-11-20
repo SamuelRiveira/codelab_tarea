@@ -2,7 +2,12 @@ import androidx.compose.animation.core.Spring
 import androidx.compose.animation.core.animateDpAsState
 import androidx.compose.animation.core.spring
 import androidx.compose.desktop.ui.tooling.preview.Preview
+import androidx.compose.foundation.ScrollState
 import androidx.compose.foundation.layout.*
+import androidx.compose.foundation.lazy.LazyColumn
+import androidx.compose.foundation.lazy.items
+import androidx.compose.foundation.rememberScrollState
+import androidx.compose.foundation.verticalScroll
 import androidx.compose.material.*
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.getValue
@@ -60,8 +65,8 @@ fun SegundaPantalla(){
         "Me gusta programar",
         "Adoro la Tortilla"
     )
-    Column {
-        textos.forEach{ texto ->
+    LazyColumn {
+        items(textos){ texto->
             Tarjeta(texto)
         }
     }
